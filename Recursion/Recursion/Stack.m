@@ -6,15 +6,15 @@
 //  Copyright © 2016 Yongyang Nie. All rights reserved.
 //
 
-#import "NYStack.h"
+#import "Stack.h"
 
-@interface NYStack ()
+@interface Stack ()
 
 @property (nonatomic, strong) NSMutableArray *objects;
 
 @end
 
-@implementation NYStack
+@implementation Stack
 
 #pragma mark - init
 

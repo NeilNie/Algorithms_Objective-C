@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NYStack : NSObject <NSFastEnumeration>
+@interface Stack : NSObject <NSFastEnumeration>
 
 @property (nonatomic, assign, readonly) NSUInteger count;
 
