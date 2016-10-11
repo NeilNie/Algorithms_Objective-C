@@ -43,9 +43,9 @@
 }
 -(IBAction)startHanoi:(id)sender{
     
-    NYStack *stack1 = [[NYStack alloc] initWithArray:[NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil]];
-    NYStack *stack2 = [[NYStack alloc] init];
-    NYStack *stack3 = [[NYStack alloc] init];
+    Stack *stack1 = [[Stack alloc] initWithArray:[NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil]];
+    Stack *stack2 = [[Stack alloc] init];
+    Stack *stack3 = [[Stack alloc] init];
     
     self.hanoiData = [NSMutableArray arrayWithObjects:stack1, stack2, stack3, nil];
     [self.hanoi Hanoi:3 source:1 destination:3 temp:2];
@@ -71,8 +71,8 @@
     
     switch (source) {
         case 1:
-            [(NYStack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(NYStack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
-            int peek = [[(NYStack *)[self.hanoiData objectAtIndex:0] peekObject] intValue]; //which one, smallest, middle or largest?
+            [(Stack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(Stack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
+            int peek = [[(Stack *)[self.hanoiData objectAtIndex:0] peekObject] intValue]; //which one, smallest, middle or largest?
             
             if (peek == 1) {
                 
@@ -122,11 +122,11 @@
                 }
             }
             
-            [(NYStack *)[self.hanoiData objectAtIndex:0] popObject];
+            [(Stack *)[self.hanoiData objectAtIndex:0] popObject];
             break;
         case 2:
-            [(NYStack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(NYStack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
-            int peek2 = [[(NYStack *)[self.hanoiData objectAtIndex:1] peekObject] intValue]; //which one, smallest, middle or largest?
+            [(Stack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(Stack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
+            int peek2 = [[(Stack *)[self.hanoiData objectAtIndex:1] peekObject] intValue]; //which one, smallest, middle or largest?
             
             if (peek2 == 1) {
                 
@@ -175,12 +175,12 @@
                     }];
                 }
             }
-            [(NYStack *)[self.hanoiData objectAtIndex:1] popObject];
+            [(Stack *)[self.hanoiData objectAtIndex:1] popObject];
             break;
         case 3:
-            [(NYStack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(NYStack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
+            [(Stack *)[self.hanoiData objectAtIndex:destination - 1] pushObject:[(Stack *)[self.hanoiData objectAtIndex:source - 1] peekObject]];
             
-            int peek3 = [[(NYStack *)[self.hanoiData objectAtIndex:2] peekObject] intValue]; //which one, smallest, middle or largest?
+            int peek3 = [[(Stack *)[self.hanoiData objectAtIndex:2] peekObject] intValue]; //which one, smallest, middle or largest?
             
             if (peek3 == 1) {
                 
@@ -229,7 +229,7 @@
                     }];
                 }
             }
-            [(NYStack *)[self.hanoiData objectAtIndex:1] popObject];
+            [(Stack *)[self.hanoiData objectAtIndex:1] popObject];
             break;
         default:
             break;

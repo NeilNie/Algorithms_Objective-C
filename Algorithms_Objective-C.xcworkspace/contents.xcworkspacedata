@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <Group
+      location = "group:GCD"
+      name = "GCD">
+      <FileRef
+         location = "group:GCD.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Recursion"
+      name = "Recursion">
+      <FileRef
+         location = "group:Recursion.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Recursion"
+         name = "Recursion">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+         <Group
+            location = "container:"
+            name = "Classes">
+            <FileRef
+               location = "group:Recursion/Recursion/DigitSum.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/DigitSum.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/GCD.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/GCD.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/Hanoi.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/Hanoi.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/PrintBinary.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/PrintBinary.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/RecursiveDrawing.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/RecursiveDrawing.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/RecursivePuzzle.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/RecursivePuzzle.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/ReverseString.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/ReverseString.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/Stack.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/Stack.m">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/ViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/ViewController.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "container:"
+            name = "Supporting Files">
+            <FileRef
+               location = "group:Recursion/Recursion/Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Recursion/Recursion/main.m">
+            </FileRef>
+            <Group
+               location = "group:Assets.xcassets"
+               name = "Assets.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Media.xcassets"
+               name = "Media.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-40@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-60@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-72.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-72@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-76@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-83.5@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small-50.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small-50@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon-Small@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NotificationIcon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NotificationIcon@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NotificationIcon~ipad.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NotificationIcon~ipad@2x.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Palindorme"
+      name = "Palindorme">
+      <FileRef
+         location = "group:Palindorme.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Palindorme"
+         name = "Palindorme">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:Palindrome.h">
+         </FileRef>
+         <FileRef
+            location = "group:Palindrome.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Linked_List"
+      name = "Linked_List">
+      <Group
+         location = "group:Linked_List"
+         name = "Linked_List">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Linked_List.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedList.h">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedList.m">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedListNode.h">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedListNode.m">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Queue"
+      name = "Queue">
+      <Group
+         location = "group:Queue"
+         name = "Queue">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Queue.h">
+      </FileRef>
+      <FileRef
+         location = "group:Queue.m">
+      </FileRef>
+      <FileRef
+         location = "group:Queue.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Stack"
+      name = "Stack">
+      <Group
+         location = "group:Stack"
+         name = "Stack">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:Stack.h">
+         </FileRef>
+         <FileRef
+            location = "group:Stack.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Stack.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Binary_Search"
+      name = "Binary_Search">
+      <Group
+         location = "group:Binary_Search"
+         name = "Binary_Search">
+         <FileRef
+            location = "group:main.c">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Binary_Search.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

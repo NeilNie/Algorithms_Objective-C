@@ -14,7 +14,7 @@
 #import "RecursiveDrawing.h"
 #import "PrintBinary.h"
 #import "DigitSum.h"
-#import "NYStack.h"
+#import "Stack.h"
 
 @interface ViewController : UIViewController <RecursiveDrawingDelegate, HanoiDelegate>
 

@@ -6,8 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		286140971DAC59CB00C64FE9 /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 286140951DAC59CB00C64FE9 /* GCD.m */; };
+		286140981DAC59CB00C64FE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286140961DAC59CB00C64FE9 /* main.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		0057A56A1D960C3200377F7F /* CopyFiles */ = {
+		286140801DAC594200C64FE9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -19,14 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0057A56C1D960C3200377F7F /* Palindorme */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Palindorme; sourceTree = BUILT_PRODUCTS_DIR; };
-		280003A31DAC49DA00B6A66C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		280003A41DAC49DA00B6A66C /* Palindrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Palindrome.h; sourceTree = "<group>"; };
-		280003A51DAC49DA00B6A66C /* Palindrome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Palindrome.m; sourceTree = "<group>"; };
+		286140821DAC594200C64FE9 /* GCD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GCD; sourceTree = BUILT_PRODUCTS_DIR; };
+		286140941DAC59CB00C64FE9 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		286140951DAC59CB00C64FE9 /* GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD.m; sourceTree = "<group>"; };
+		286140961DAC59CB00C64FE9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0057A5691D960C3200377F7F /* Frameworks */ = {
+		2861407F1DAC594200C64FE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,97 +41,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0057A5631D960C3200377F7F = {
+		286140791DAC594200C64FE9 = {
 			isa = PBXGroup;
 			children = (
-				280003A21DAC49DA00B6A66C /* Palindorme */,
-				0057A56D1D960C3200377F7F /* Products */,
+				286140841DAC594200C64FE9 /* GCD */,
+				286140831DAC594200C64FE9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0057A56D1D960C3200377F7F /* Products */ = {
+		286140831DAC594200C64FE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0057A56C1D960C3200377F7F /* Palindorme */,
+				286140821DAC594200C64FE9 /* GCD */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		280003A21DAC49DA00B6A66C /* Palindorme */ = {
+		286140841DAC594200C64FE9 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				280003A31DAC49DA00B6A66C /* main.m */,
-				280003A41DAC49DA00B6A66C /* Palindrome.h */,
-				280003A51DAC49DA00B6A66C /* Palindrome.m */,
+				286140941DAC59CB00C64FE9 /* GCD.h */,
+				286140951DAC59CB00C64FE9 /* GCD.m */,
+				286140961DAC59CB00C64FE9 /* main.m */,
 			);
-			path = Palindorme;
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0057A56B1D960C3200377F7F /* Palindorme */ = {
+		286140811DAC594200C64FE9 /* GCD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0057A5731D960C3200377F7F /* Build configuration list for PBXNativeTarget "Palindorme" */;
+			buildConfigurationList = 286140891DAC594200C64FE9 /* Build configuration list for PBXNativeTarget "GCD" */;
 			buildPhases = (
-				0057A5681D960C3200377F7F /* Sources */,
-				0057A5691D960C3200377F7F /* Frameworks */,
-				0057A56A1D960C3200377F7F /* CopyFiles */,
+				2861407E1DAC594200C64FE9 /* Sources */,
+				2861407F1DAC594200C64FE9 /* Frameworks */,
+				286140801DAC594200C64FE9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Palindorme;
-			productName = CS_Palindorme;
-			productReference = 0057A56C1D960C3200377F7F /* Palindorme */;
+			name = GCD;
+			productName = GCD;
+			productReference = 286140821DAC594200C64FE9 /* GCD */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0057A5641D960C3200377F7F /* Project object */ = {
+		2861407A1DAC594200C64FE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yongyang Nie";
 				TargetAttributes = {
-					0057A56B1D960C3200377F7F = {
-						CreatedOnToolsVersion = 8.0;
+					286140811DAC594200C64FE9 = {
+						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8NZ8K5GNH8;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0057A5671D960C3200377F7F /* Build configuration list for PBXProject "Palindorme" */;
+			buildConfigurationList = 2861407D1DAC594200C64FE9 /* Build configuration list for PBXProject "GCD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0057A5631D960C3200377F7F;
-			productRefGroup = 0057A56D1D960C3200377F7F /* Products */;
+			mainGroup = 286140791DAC594200C64FE9;
+			productRefGroup = 286140831DAC594200C64FE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0057A56B1D960C3200377F7F /* Palindorme */,
+				286140811DAC594200C64FE9 /* GCD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0057A5681D960C3200377F7F /* Sources */ = {
+		2861407E1DAC594200C64FE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286140981DAC59CB00C64FE9 /* main.m in Sources */,
+				286140971DAC59CB00C64FE9 /* GCD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0057A5711D960C3200377F7F /* Debug */ = {
+		286140871DAC594200C64FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -144,7 +151,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -167,14 +173,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		0057A5721D960C3200377F7F /* Release */ = {
+		286140881DAC594200C64FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -192,7 +198,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -209,13 +214,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		0057A5741D960C3200377F7F /* Debug */ = {
+		2861408A1DAC594200C64FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
@@ -223,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		0057A5751D960C3200377F7F /* Release */ = {
+		2861408B1DAC594200C64FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
@@ -234,25 +239,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0057A5671D960C3200377F7F /* Build configuration list for PBXProject "Palindorme" */ = {
+		2861407D1DAC594200C64FE9 /* Build configuration list for PBXProject "GCD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0057A5711D960C3200377F7F /* Debug */,
-				0057A5721D960C3200377F7F /* Release */,
+				286140871DAC594200C64FE9 /* Debug */,
+				286140881DAC594200C64FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0057A5731D960C3200377F7F /* Build configuration list for PBXNativeTarget "Palindorme" */ = {
+		286140891DAC594200C64FE9 /* Build configuration list for PBXNativeTarget "GCD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0057A5741D960C3200377F7F /* Debug */,
-				0057A5751D960C3200377F7F /* Release */,
+				2861408A1DAC594200C64FE9 /* Debug */,
+				2861408B1DAC594200C64FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0057A5641D960C3200377F7F /* Project object */;
+	rootObject = 2861407A1DAC594200C64FE9 /* Project object */;
 }

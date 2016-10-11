@@ -10,4 +10,26 @@
 
 @implementation Queue
 
+- (instancetype)init{
+    
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+-(void)dequeue:(id)object{
+    
+}
+-(void)enqueue:(id)object{
+    
+}
+-(int)count{
+    return nil;
+}
+-(BOOL)isEmpty{
+    return NO;
+}
+
 @end
