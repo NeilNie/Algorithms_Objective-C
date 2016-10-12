@@ -33,13 +33,17 @@
 }
 
 //return last node in linked list
+
+//LinkedListNode *node = self.head;
+//while (node != nil && node.next != nil) {
+//    node = node.next;
+//}
+//return node;
 -(LinkedListNode *)last{
     
-    LinkedListNode *node = self.head;
-    while (node != nil && node.next != nil) {
-        node = node.next;
-    }
-    return node;
+    if ([self count] == 0)
+        return [self nodeAt:[self count]];
+    return [self nodeAt:[self count] - 1];
 }
 
 //add object to linked list
@@ -67,21 +71,6 @@
         }
     }
     return count;
-}
-
-//return a node at a certain index
--(LinkedListNode *)nodeAt:(int)index{
-    
-    if (index >= 0) {
-        LinkedListNode *node = self.head;
-        int count = 0;
-        while (count != index || count < [self count]) {
-            count ++;
-            node = node.next;
-        }
-        return node;
-    }
-    @throw [NSException exceptionWithName:@"Linked List Out of Bounds" reason:@"index < 0 || index > LinkedList upperbound" userInfo:nil];
 }
 
 //return two nodes before and after a index
@@ -121,8 +110,66 @@
     NSLog(@"%@", newNode.object);
 }
 
--(void)print{
+//clear all objects in linked list recursively.
+-(void)clear{
     
+    self.head = nil;
 }
+-(void)print{
+    [self printNode:self.head];
+}
+
+-(void)removeAt:(int)index{
+    
+    LinkedListNode *node = [self nodeAt:index];
+    node.previous.next = node.next;
+    node.next.previous = node.previous;
+    node = nil;
+}
+
+#pragma mark - Helpers (mainly recursive methods)
+
+//return a node at a certain index
+-(LinkedListNode *)nodeAt:(int)index{
+    
+    if (index >= 0) {
+        LinkedListNode *node = self.head;
+        int count = 0;
+        while (count < index && count < [self count]) {
+            count ++;
+            node = node.next;
+        }
+        return node;
+    }
+    @throw [NSException exceptionWithName:@"Linked List Out of Bounds" reason:@"index < 0 || index > LinkedList upperbound" userInfo:nil];
+}
+
+//print out node, implemented recursively
+-(void)printNode:(LinkedListNode *)node{
+    
+    if (node == [self last]) {
+        NSLog(@"%@", node.object);
+        NSLog(@"|");
+        NSLog(@"nil");
+    }else{
+        NSLog(@"%@", node.object);
+        NSLog(@"|");
+        [self printNode:node.next];
+    }
+}
+
+//remove a node, implemented recursively
+//-(void)removeNode:(LinkedListNode *)node{
+//    
+//    if (node.next == nil) {
+//        node.object = nil;
+//        node.previous = nil;
+//        return;
+//    }else{
+//        node.object = nil;
+//        node.previous = nil;
+//        [self removeNode:node.next];
+//    }
+//}
 
 @end

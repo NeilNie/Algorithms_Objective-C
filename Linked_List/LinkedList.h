@@ -20,6 +20,12 @@ typedef struct NodesBA {
 
 -(BOOL)isEmpty;
 
+-(void)clear;
+
+-(void)print;
+
+-(void)removeAt:(int)index;
+
 -(LinkedListNode *)first;
 
 -(LinkedListNode *)last;

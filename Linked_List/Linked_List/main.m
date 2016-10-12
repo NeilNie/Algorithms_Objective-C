@@ -20,6 +20,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i", [list count]);
         [list insert:@"five" atIndex:2];
         NSLog(@"%i", [list count]);
+        [list clear];
+        NSLog(@"%i", [list count]);
     }
     return 0;
 }

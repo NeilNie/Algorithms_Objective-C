@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281F21441DAE6DC4004C698C /* Linked_List_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F21431DAE6DC4004C698C /* Linked_List_Test.m */; };
 		288A9FC51DABD90C008D590B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288A9FC41DABD90C008D590B /* main.m */; };
 		288A9FCD1DABD916008D590B /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 288A9FCC1DABD916008D590B /* LinkedList.m */; };
 		288A9FD01DABD91F008D590B /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 288A9FCF1DABD91F008D590B /* LinkedListNode.m */; };
@@ -25,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		281F21411DAE6DC4004C698C /* Linked_List_Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Linked_List_Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		281F21431DAE6DC4004C698C /* Linked_List_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Linked_List_Test.m; sourceTree = "<group>"; };
+		281F21451DAE6DC4004C698C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288A9FC11DABD90C008D590B /* Linked_List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Linked_List; sourceTree = BUILT_PRODUCTS_DIR; };
 		288A9FC41DABD90C008D590B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		288A9FCB1DABD916008D590B /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedList.h; path = ../LinkedList.h; sourceTree = "<group>"; };
@@ -34,6 +38,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		281F213E1DAE6DC4004C698C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		288A9FBE1DABD90B008D590B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281F21421DAE6DC4004C698C /* Linked_List_Test */ = {
+			isa = PBXGroup;
+			children = (
+				281F21431DAE6DC4004C698C /* Linked_List_Test.m */,
+				281F21451DAE6DC4004C698C /* Info.plist */,
+			);
+			path = Linked_List_Test;
+			sourceTree = "<group>";
+		};
 		288A9FB81DABD90B008D590B = {
 			isa = PBXGroup;
 			children = (
 				288A9FC31DABD90C008D590B /* Linked_List */,
+				281F21421DAE6DC4004C698C /* Linked_List_Test */,
 				288A9FC21DABD90C008D590B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				288A9FC11DABD90C008D590B /* Linked_List */,
+				281F21411DAE6DC4004C698C /* Linked_List_Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +97,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		281F21401DAE6DC4004C698C /* Linked_List_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281F21481DAE6DC4004C698C /* Build configuration list for PBXNativeTarget "Linked_List_Test" */;
+			buildPhases = (
+				281F213D1DAE6DC4004C698C /* Sources */,
+				281F213E1DAE6DC4004C698C /* Frameworks */,
+				281F213F1DAE6DC4004C698C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Linked_List_Test;
+			productName = Linked_List_Test;
+			productReference = 281F21411DAE6DC4004C698C /* Linked_List_Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		288A9FC01DABD90B008D590B /* Linked_List */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 288A9FC81DABD90C008D590B /* Build configuration list for PBXNativeTarget "Linked_List" */;
@@ -101,6 +140,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yongyang Nie";
 				TargetAttributes = {
+					281F21401DAE6DC4004C698C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8NZ8K5GNH8;
+						ProvisioningStyle = Automatic;
+					};
 					288A9FC01DABD90B008D590B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8NZ8K5GNH8;
@@ -121,11 +165,30 @@
 			projectRoot = "";
 			targets = (
 				288A9FC01DABD90B008D590B /* Linked_List */,
+				281F21401DAE6DC4004C698C /* Linked_List_Test */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		281F213F1DAE6DC4004C698C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		281F213D1DAE6DC4004C698C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F21441DAE6DC4004C698C /* Linked_List_Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		288A9FBD1DABD90B008D590B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +202,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		281F21461DAE6DC4004C698C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
+				INFOPLIST_FILE = Linked_List_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongyang.Linked-List-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		281F21471DAE6DC4004C698C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
+				INFOPLIST_FILE = Linked_List_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongyang.Linked-List-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		288A9FC61DABD90C008D590B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,6 +332,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		281F21481DAE6DC4004C698C /* Build configuration list for PBXNativeTarget "Linked_List_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281F21461DAE6DC4004C698C /* Debug */,
+				281F21471DAE6DC4004C698C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		288A9FBC1DABD90B008D590B /* Build configuration list for PBXProject "Linked_List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
