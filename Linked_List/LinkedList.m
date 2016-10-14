@@ -12,11 +12,11 @@
 
 #pragma mark - Constructor
 
-- (instancetype)init{
+- (instancetype)initWithHead:(LinkedListNode *)node{
     
     self = [super init];
     if (self) {
-        
+        self.head = node;
     }
     return self;
 }
@@ -33,12 +33,6 @@
 }
 
 //return last node in linked list
-
-//LinkedListNode *node = self.head;
-//while (node != nil && node.next != nil) {
-//    node = node.next;
-//}
-//return node;
 -(LinkedListNode *)last{
     
     if ([self count] == 0)
@@ -129,6 +123,17 @@
 
 #pragma mark - Helpers (mainly recursive methods)
 
+-(LinkedListNode *)nextNode:(LinkedListNode *)node{
+    
+    static int i;
+    if (node.next == nil) {
+        return nil;
+    }else{
+        i++;
+        return [self nextNode:node.next];
+    }
+}
+
 //return a node at a certain index
 -(LinkedListNode *)nodeAt:(int)index{
     
@@ -157,19 +162,5 @@
         [self printNode:node.next];
     }
 }
-
-//remove a node, implemented recursively
-//-(void)removeNode:(LinkedListNode *)node{
-//    
-//    if (node.next == nil) {
-//        node.object = nil;
-//        node.previous = nil;
-//        return;
-//    }else{
-//        node.object = nil;
-//        node.previous = nil;
-//        [self removeNode:node.next];
-//    }
-//}
 
 @end

@@ -2,7 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Graph/Graph.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:K_Mean/K_Mean.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tree/Tree.xcodeproj">
    </FileRef>
    <Group
       location = "group:GCD"
@@ -54,9 +63,6 @@
                location = "group:Recursion/Recursion/Hanoi.m">
             </FileRef>
             <FileRef
-               location = "group:Recursion/Recursion/Info.plist">
-            </FileRef>
-            <FileRef
                location = "group:Recursion/Recursion/PrintBinary.h">
             </FileRef>
             <FileRef
@@ -106,6 +112,9 @@
          <Group
             location = "container:"
             name = "Supporting Files">
+            <FileRef
+               location = "group:Recursion/Recursion/Info.plist">
+            </FileRef>
             <FileRef
                location = "group:Recursion/Recursion/Info.plist">
             </FileRef>
@@ -292,13 +301,6 @@
    <Group
       location = "group:Binary_Search"
       name = "Binary_Search">
-      <Group
-         location = "group:Binary_Search"
-         name = "Binary_Search">
-         <FileRef
-            location = "group:main.c">
-         </FileRef>
-      </Group>
       <FileRef
          location = "group:Binary_Search.xcodeproj">
       </FileRef>

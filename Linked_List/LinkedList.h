@@ -18,6 +18,8 @@ typedef struct NodesBA {
 
 @property (strong, nonatomic) LinkedListNode *head;
 
+- (instancetype)initWithHead:(LinkedListNode *)node;
+
 -(BOOL)isEmpty;
 
 -(void)clear;
