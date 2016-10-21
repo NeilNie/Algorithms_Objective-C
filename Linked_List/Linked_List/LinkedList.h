@@ -6,7 +6,7 @@
 //  Copyright © 2016 Yongyang Nie. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "LinkedListNode.h"
 
 typedef struct NodesBA {
@@ -17,8 +17,6 @@ typedef struct NodesBA {
 @interface LinkedList : NSObject
 
 @property (strong, nonatomic) LinkedListNode *head;
-
-- (instancetype)initWithHead:(LinkedListNode *)node;
 
 -(BOOL)isEmpty;
 
