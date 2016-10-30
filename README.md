@@ -7,15 +7,27 @@ You can find many useful algorithms and data structures in computer science in t
 Learning and playing around with algorithms can make you a much better programmer or computer sciencetist. Many people dive into computer science or programming with little background in algorithms. However, with these basic knowledge, you can be the top 10% of programmers. 
 
 ##Contents:
+####Algorithm
+- Binary search
+- Palindrome
+- Insert Sort
 - Recursion
     - GCD
     - Recursive Drawings
     - Tower of Hanoi
     - Reverse String
+
+####Data structures
 - Linked list
 - Stacks
-- Binary search
-- Palindrome
+- Queue
+
+####Graphs
+- Graph
+- Breath-first search
+- Depth-first search
+
+
 [much more to come]
 
 ##How to contribute:

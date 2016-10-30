@@ -2,13 +2,19 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Depth-first search/Depth-first search.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Breath-first search/Breath-first search.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
       location = "group:Insert Sort/Insert Sort.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Graph/Graph.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
    </FileRef>
    <FileRef
       location = "group:K_Mean/K_Mean.xcodeproj">
