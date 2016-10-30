@@ -5,7 +5,7 @@
       location = "group:Depth-first search/Depth-first search.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Breath-first search/Breath-first search.xcodeproj">
+      location = "group:/Users/Neil/Desktop/Algorithms_Objective-C/Breath-first search/Breadth-first search.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:README.md">

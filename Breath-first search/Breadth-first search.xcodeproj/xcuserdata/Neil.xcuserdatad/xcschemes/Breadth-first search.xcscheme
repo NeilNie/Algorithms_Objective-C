@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E56EC11DC63B6F00859A67"
-               BuildableName = "Breath-first search"
-               BlueprintName = "Breath-first search"
-               ReferencedContainer = "container:Breath-first search.xcodeproj">
+               BuildableName = "Breadth-first search"
+               BlueprintName = "Breadth-first search"
+               ReferencedContainer = "container:Breadth-first search.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E56EC11DC63B6F00859A67"
-            BuildableName = "Breath-first search"
-            BlueprintName = "Breath-first search"
-            ReferencedContainer = "container:Breath-first search.xcodeproj">
+            BuildableName = "Breadth-first search"
+            BlueprintName = "Breadth-first search"
+            ReferencedContainer = "container:Breadth-first search.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E56EC11DC63B6F00859A67"
-            BuildableName = "Breath-first search"
-            BlueprintName = "Breath-first search"
-            ReferencedContainer = "container:Breath-first search.xcodeproj">
+            BuildableName = "Breadth-first search"
+            BlueprintName = "Breadth-first search"
+            ReferencedContainer = "container:Breadth-first search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E56EC11DC63B6F00859A67"
-            BuildableName = "Breath-first search"
-            BlueprintName = "Breath-first search"
-            ReferencedContainer = "container:Breath-first search.xcodeproj">
+            BuildableName = "Breadth-first search"
+            BlueprintName = "Breadth-first search"
+            ReferencedContainer = "container:Breadth-first search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

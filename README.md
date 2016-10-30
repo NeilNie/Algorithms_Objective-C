@@ -24,7 +24,7 @@ Learning and playing around with algorithms can make you a much better programme
 
 ####Graphs
 - Graph
-- Breath-first search
+- Breadth-first search
 - Depth-first search
 
 

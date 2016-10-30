@@ -8,28 +8,39 @@
 
 #import "Queue.h"
 
+@interface Queue ()
+
+//note: objects is private and you can implement it with linked list.
+@property (strong, nonatomic) NSMutableArray *objects;
+
+@end
+
 @implementation Queue
 
 - (instancetype)init{
     
     self = [super init];
     if (self) {
-        
+        self.objects = [NSMutableArray array];
     }
     return self;
 }
 
--(void)dequeue:(id)object{
-    
+-(void)dequeue{
+    [self.objects removeObjectAtIndex:0];
 }
 -(void)enqueue:(id)object{
-    
+    [self.objects addObject:object];
 }
--(int)count{
-    return nil;
+-(NSUInteger)count{
+    return [self.objects count];
 }
 -(BOOL)isEmpty{
-    return NO;
+    return [self.objects firstObject] == nil;
+}
+
+-(void)printQueue{
+    NSLog(@"%@", self.objects);
 }
 
 @end

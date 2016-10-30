@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		28E56EC21DC63B6F00859A67 /* Breath-first search */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Breath-first search"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E56EC21DC63B6F00859A67 /* Breadth-first search */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Breadth-first search"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E56EC51DC63B6F00859A67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		28E56EB91DC63B6F00859A67 = {
 			isa = PBXGroup;
 			children = (
-				28E56EC41DC63B6F00859A67 /* Breath-first search */,
+				28E56EC41DC63B6F00859A67 /* Breadth-first search */,
 				28E56EC31DC63B6F00859A67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,26 @@
 		28E56EC31DC63B6F00859A67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28E56EC21DC63B6F00859A67 /* Breath-first search */,
+				28E56EC21DC63B6F00859A67 /* Breadth-first search */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28E56EC41DC63B6F00859A67 /* Breath-first search */ = {
+		28E56EC41DC63B6F00859A67 /* Breadth-first search */ = {
 			isa = PBXGroup;
 			children = (
 				28E56EC51DC63B6F00859A67 /* main.m */,
 			);
+			name = "Breadth-first search";
 			path = "Breath-first search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28E56EC11DC63B6F00859A67 /* Breath-first search */ = {
+		28E56EC11DC63B6F00859A67 /* Breadth-first search */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E56EC91DC63B6F00859A67 /* Build configuration list for PBXNativeTarget "Breath-first search" */;
+			buildConfigurationList = 28E56EC91DC63B6F00859A67 /* Build configuration list for PBXNativeTarget "Breadth-first search" */;
 			buildPhases = (
 				28E56EBE1DC63B6F00859A67 /* Sources */,
 				28E56EBF1DC63B6F00859A67 /* Frameworks */,
@@ -77,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = "Breath-first search";
+			name = "Breadth-first search";
 			productName = "Breath-first search";
-			productReference = 28E56EC21DC63B6F00859A67 /* Breath-first search */;
+			productReference = 28E56EC21DC63B6F00859A67 /* Breadth-first search */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28E56EBD1DC63B6F00859A67 /* Build configuration list for PBXProject "Breath-first search" */;
+			buildConfigurationList = 28E56EBD1DC63B6F00859A67 /* Build configuration list for PBXProject "Breadth-first search" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -110,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28E56EC11DC63B6F00859A67 /* Breath-first search */,
+				28E56EC11DC63B6F00859A67 /* Breadth-first search */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +234,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28E56EBD1DC63B6F00859A67 /* Build configuration list for PBXProject "Breath-first search" */ = {
+		28E56EBD1DC63B6F00859A67 /* Build configuration list for PBXProject "Breadth-first search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E56EC71DC63B6F00859A67 /* Debug */,
@@ -242,13 +243,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28E56EC91DC63B6F00859A67 /* Build configuration list for PBXNativeTarget "Breath-first search" */ = {
+		28E56EC91DC63B6F00859A67 /* Build configuration list for PBXNativeTarget "Breadth-first search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E56ECA1DC63B6F00859A67 /* Debug */,
 				28E56ECB1DC63B6F00859A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
