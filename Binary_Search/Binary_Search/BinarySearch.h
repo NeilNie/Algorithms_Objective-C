@@ -10,4 +10,6 @@
 
 @interface BinarySearch : NSObject
 
+-(void)binarySearch:(NSArray <NSNumber *> *)array forObject:(NSNumber *)object;
+
 @end

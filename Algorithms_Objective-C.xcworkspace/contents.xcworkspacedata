@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:Trees/Trees.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Depth-first search/Depth-first search.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:/Users/Neil/Desktop/Algorithms_Objective-C/Breath-first search/Breadth-first search.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
    </FileRef>
    <FileRef
       location = "group:Insert Sort/Insert Sort.xcodeproj">
@@ -253,18 +256,6 @@
       </Group>
       <FileRef
          location = "group:Linked_List.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:LinkedList.h">
-      </FileRef>
-      <FileRef
-         location = "group:LinkedList.m">
-      </FileRef>
-      <FileRef
-         location = "group:LinkedListNode.h">
-      </FileRef>
-      <FileRef
-         location = "group:LinkedListNode.m">
       </FileRef>
    </Group>
    <Group

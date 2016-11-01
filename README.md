@@ -8,7 +8,6 @@ Learning and playing around with algorithms can make you a much better programme
 
 ##Contents:
 ####Algorithm
-- Binary search
 - Palindrome
 - Insert Sort
 - Recursion
@@ -16,6 +15,11 @@ Learning and playing around with algorithms can make you a much better programme
     - Recursive Drawings
     - Tower of Hanoi
     - Reverse String
+
+####Searching
+- Linear Search. Find an element in an array.
+- Binary Search. Quickly find elements in a sorted array.
+- Count Occurrences. Count how often a value appears in an array.
 
 ####Data structures
 - Linked list
