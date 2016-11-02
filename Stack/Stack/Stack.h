@@ -1,25 +1,21 @@
 //
-//  NYStack.h
-//  Recursion_HW
+//  Stack.h
+//  Maze
 //
-//  Created by Yongyang Nie on 10/5/16.
+//  Created by Yongyang Nie on 10/28/16.
 //  Copyright © 2016 Yongyang Nie. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "LinkedList.h"
 
-@interface Stack : NSObject <NSFastEnumeration>
+@interface Stack : LinkedList
 
-@property (nonatomic, assign, readonly) NSUInteger count;
+-(void)push:(id)object;
 
--(id)initWithArray:(NSArray*)array;
+-(void)pop;
 
--(void)pushObject:(id)object;
+-(id)peek;
 
--(void)pushObjects:(NSArray*)objects;
-
--(id)popObject;
-
--(id)peekObject;
+-(BOOL)isEmpty;
 
 @end

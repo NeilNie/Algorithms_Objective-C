@@ -7,11 +7,12 @@
 //
 
 #import "Queue.h"
+#import "LinkedList.h"
 
 @interface Queue ()
 
-//note: objects is private and you can implement it with linked list.
-@property (strong, nonatomic) NSMutableArray *objects;
+//note: objects is private and you can implement it with NSMutableArray.
+@property (strong, nonatomic) LinkedList *objects;
 
 @end
 
@@ -21,13 +22,13 @@
     
     self = [super init];
     if (self) {
-        self.objects = [NSMutableArray array];
+        self.objects = [[LinkedList alloc] init];
     }
     return self;
 }
 
 -(void)dequeue{
-    [self.objects removeObjectAtIndex:0];
+    [self.objects removeAt:0];
 }
 -(void)enqueue:(id)object{
     [self.objects addObject:object];
@@ -36,7 +37,7 @@
     return [self.objects count];
 }
 -(BOOL)isEmpty{
-    return [self.objects firstObject] == nil;
+    return [self.objects head] == nil;
 }
 
 -(void)printQueue{

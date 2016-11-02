@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:Merge Sort/Merge Sort.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Trees/Trees.xcodeproj">
    </FileRef>
    <FileRef
@@ -296,6 +299,102 @@
       </Group>
       <FileRef
          location = "group:Stack.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:../../Library/Mobile Documents/com~apple~CloudDocs/Deerfield Academy/DA Advanced CS/Maze"
+      name = "Maze">
+      <Group
+         location = "group:Maze"
+         name = "Maze">
+         <FileRef
+            location = "group:Actions.sks">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:GameScene.h">
+         </FileRef>
+         <FileRef
+            location = "group:GameScene.m">
+         </FileRef>
+         <FileRef
+            location = "group:GameScene.sks">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:Maze.h">
+         </FileRef>
+         <FileRef
+            location = "group:Maze.m">
+         </FileRef>
+         <FileRef
+            location = "group:MZMove.h">
+         </FileRef>
+         <FileRef
+            location = "group:MZMove.m">
+         </FileRef>
+         <FileRef
+            location = "group:Queue.h">
+         </FileRef>
+         <FileRef
+            location = "group:Queue.m">
+         </FileRef>
+         <FileRef
+            location = "group:Stack.h">
+         </FileRef>
+         <FileRef
+            location = "group:Stack.m">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Maze.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:MazeTests"
+         name = "MazeTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:MazeTests.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:README.md">
       </FileRef>
    </Group>
    <Group

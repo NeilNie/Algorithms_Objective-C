@@ -8,6 +8,12 @@
 
 #import "LinkedList.h"
 
+#if __has_feature(objc_arc)
+#define MDLog(format, ...) CFShow((__bridge CFStringRef)[NSString stringWithFormat:format, ## __VA_ARGS__]);
+#else
+#define MDLog(format, ...) CFShow([NSString stringWithFormat:format, ## __VA_ARGS__]);
+#endif
+
 @implementation LinkedList
 
 #pragma mark - Constructor
@@ -55,10 +61,10 @@
 //count total items in linked list
 -(int)count{
     
+    LinkedListNode *node = self.head;
     int count = 0;
     if (self.head) {
         count++;
-        LinkedListNode *node = self.head;
         while (node.next != nil) {
             count++;
             node = node.next;
@@ -67,30 +73,11 @@
     return count;
 }
 
-//return two nodes before and after a index
--(NodesBA)nodeBeforeAfter:(int)index{
-    
-    if (index >= 0) {
-        
-        struct NodesBA nodesba;
-        int c = 0;
-        LinkedListNode *before = [[LinkedListNode alloc] init];
-        LinkedListNode *after = self.head;
-        while (c < index && c < [self count]) {
-            c ++;
-            before = after;
-            after = after.next;
-        }
-        nodesba.before = before;
-        nodesba.after = after;
-        
-        return nodesba;
-    }
-    @throw [NSException exceptionWithName:@"Linked List Out of Bounds" reason:@"index < 0 || index > LinkedList upperbound" userInfo:nil];
-}
-
 -(void)insert:(id)object atIndex:(int)index{
     
+    if (index > [self count])
+        @throw [NSException exceptionWithName:@"Index out of bounds" reason:[NSString stringWithFormat:@"index %i out of bound 0...%i", index, [self count]] userInfo:nil];
+
     LinkedListNode *newNode = [[LinkedListNode alloc] initWithObject:object];
     LinkedListNode *findNode = self.head;
     int count = 0;
@@ -101,41 +88,33 @@
     newNode.previous = findNode;
     newNode.next = findNode.next;
     findNode.next = newNode;
-    NSLog(@"%@", newNode.object);
 }
 
-//clear all objects in linked list recursively.
--(void)clear{
-    
-    self.head = nil;
-}
--(void)print{
-    [self printNode:self.head];
-}
-
+//remove an object at a given index
 -(void)removeAt:(int)index{
     
+    if (index > [self count])
+        @throw [NSException exceptionWithName:@"Index out of bounds" reason:[NSString stringWithFormat:@"index %i out of bound 0...%i", index, [self count]] userInfo:nil];
+
     LinkedListNode *node = [self nodeAt:index];
-    node.previous.next = node.next;
-    node.next.previous = node.previous;
-    node = nil;
+    if (index == 0) {
+        self.head = node.next;
+    }else{
+        node.previous.next = node.next;
+        node.next.previous = node.previous;
+        node = nil;
+    }
 }
 
 #pragma mark - Helpers (mainly recursive methods)
 
--(LinkedListNode *)nextNode:(LinkedListNode *)node{
-    
-    static int i;
-    if (node.next == nil) {
-        return nil;
-    }else{
-        i++;
-        return [self nextNode:node.next];
-    }
-}
+//clear all objects in linked list recursively.
+-(void)clear{self.head = nil;}
+
+-(void)print{ NSLog(@"Linked List:"); [self printNode:self.head];}
 
 //return a node at a certain index
--(LinkedListNode *)nodeAt:(int)index{
+-(LinkedListNode *__nonnull)nodeAt:(int)index{
     
     if (index >= 0) {
         LinkedListNode *node = self.head;
@@ -152,13 +131,14 @@
 //print out node, implemented recursively
 -(void)printNode:(LinkedListNode *)node{
     
-    if (node == [self last]) {
-        NSLog(@"%@", node.object);
-        NSLog(@"|");
-        NSLog(@"nil");
+    if (node.next == nil) {
+        MDLog(@"%@", [node.object description]);
+        MDLog(@"----------");
     }else{
-        NSLog(@"%@", node.object);
-        NSLog(@"|");
+        MDLog(@"%@", [node.object description]);
+        MDLog(@" | ");
+        MDLog(@" | ");
+        MDLog(@"----------");
         [self printNode:node.next];
     }
 }

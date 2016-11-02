@@ -1,8 +1,8 @@
- //
-//  NYStack.m
-//  Recursion_HW
 //
-//  Created by Yongyang Nie on 10/5/16.
+//  Stack.m
+//  Maze
+//
+//  Created by Yongyang Nie on 10/28/16.
 //  Copyright © 2016 Yongyang Nie. All rights reserved.
 //
 
@@ -10,72 +10,40 @@
 
 @interface Stack ()
 
-@property (nonatomic, strong) NSMutableArray *objects;
+@property (strong, nonatomic, nonnull) LinkedList *list;
 
 @end
 
 @implementation Stack
 
-#pragma mark - init
+#pragma mark - Constructor
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
+        self.list = [[LinkedList alloc] init];
     }
     return self;
 }
 
--(NSUInteger)count{
-    return _objects.count;
+-(void)push:(id)object{
+    [self.list addObject:object];
+}
+-(void)pop{
+    [self.list removeAt:[self.list count] - 1];
+}
+-(id)peek{
+    return [self.list nodeAt:[self.list count] - 1];
+}
+-(BOOL)isEmpty{
+    return self.list.head == nil;
 }
 
--(id)initWithArray:(NSArray*)array{
+-(void)print{
     
-    self = [super init];
-    
-    if (self = [super init]) {
-        self.objects = [[NSMutableArray alloc] initWithArray:array];
-    }
-    return self;
-}
-
--(void)pushObject:(id)object{
-    
-    [self.objects addObject:object];
-}
-
--(void)pushObjects:(NSArray*)objects{
-    
-    [self.objects addObjectsFromArray:objects];
-}
-
--(id)popObject{
-    
-    if (self.objects.count > 0) {
-        id object = [self.objects lastObject];
-        [self.objects removeObject:self.objects.lastObject];
-        return object;
-    }
-    @throw [NSException exceptionWithName:@"Stack overflow" reason:@"Array length <= 0" userInfo:nil];
-    return nil;
-}
-
--(id)peekObject{
-    
-    if (self.objects.count > 0) {
-        id object = [self.objects lastObject];
-        return object;
-    }
-    @throw [NSException exceptionWithName:@"Stack overflow" reason:@"Array length <= 0" userInfo:nil];
-    return nil;
-}
-
-#pragma mark - NSFastEnumeration
-
-- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len {
-    return [_objects countByEnumeratingWithState:state objects:buffer count:len];
+    [self.list print];
+    NSLog(@"%i items in stack", [self count]);
 }
 
 @end

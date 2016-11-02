@@ -10,6 +10,7 @@ Learning and playing around with algorithms can make you a much better programme
 ####Algorithm
 - Palindrome
 - Insert Sort
+- Merge Sort
 - Recursion
     - GCD
     - Recursive Drawings

@@ -9,36 +9,39 @@
 #import <Foundation/Foundation.h>
 #import "LinkedListNode.h"
 
-typedef struct NodesBA {
-    __unsafe_unretained LinkedListNode *before;
-    __unsafe_unretained LinkedListNode *after;
-} NodesBA;
-
 @interface LinkedList : NSObject
 
-@property (strong, nonatomic) LinkedListNode *head;
+@property (strong, nonatomic) LinkedListNode *__nullable head;
 
+//check is the linked list is empty
 -(BOOL)isEmpty;
 
+//clear the linked list
 -(void)clear;
 
+//print out evey element in the list
 -(void)print;
 
+//remove an object at a given index
 -(void)removeAt:(int)index;
 
--(LinkedListNode *)first;
+//return the first node of the list
+-(LinkedListNode *__nullable)first;
 
--(LinkedListNode *)last;
+//return the last node of the list. 
+-(LinkedListNode *__nullable)last;
 
--(void)addObject:(id)object;
+-(void)addObject:(id __nonnull)object;
 
 -(int)count;
 
--(LinkedListNode *)nodeAt:(int)index;
+-(LinkedListNode *__nonnull)nodeAt:(int)index;
 
--(NodesBA)nodeBeforeAfter:(int)index;
+//-(NodesBA)nodeBeforeAfter:(int)index;
 
--(void)insert:(id)object atIndex:(int)index;
+//insert node at a given index.
+//parameter: generic type, int
+-(void)insert:(id __nonnull)object atIndex:(int)index;
 
 @end
 

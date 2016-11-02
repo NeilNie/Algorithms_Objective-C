@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EA1C407451CF5BBE51BD4FE8B1B470BD062030C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6121265119574C99CC74C88CF220EC471A45C81" : 9223372036854775807,
+    "EA1C407451CF5BBE51BD4FE8B1B470BD062030C0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D1FDC6EC-9285-4471-AE41-D7B2BA419676",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6121265119574C99CC74C88CF220EC471A45C81" : "..\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Deerfield%20Academy\/DA%20Advanced%20CS",
+    "EA1C407451CF5BBE51BD4FE8B1B470BD062030C0" : "Algorithms_Objective-C\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Algorithms_Objective-C",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Algorithms_Objective-C.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NeilNie\/DA-Advanced-CS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6121265119574C99CC74C88CF220EC471A45C81"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NeilNie\/Algorithms_Objective-C.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA1C407451CF5BBE51BD4FE8B1B470BD062030C0"
+    }
+  ]
+}
