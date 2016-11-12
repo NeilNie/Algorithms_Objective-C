@@ -8,15 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		281D1F021DAC50A40007233D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EE61DAC50A40007233D /* AppDelegate.m */; };
-		281D1F031DAC50A40007233D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281D1EE71DAC50A40007233D /* Assets.xcassets */; };
 		281D1F041DAC50A40007233D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281D1EE91DAC50A40007233D /* LaunchScreen.storyboard */; };
 		281D1F051DAC50A40007233D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281D1EEB1DAC50A40007233D /* Main.storyboard */; };
 		281D1F061DAC50A40007233D /* DigitSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EEE1DAC50A40007233D /* DigitSum.m */; };
 		281D1F071DAC50A40007233D /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EF01DAC50A40007233D /* GCD.m */; };
 		281D1F081DAC50A40007233D /* Hanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EF21DAC50A40007233D /* Hanoi.m */; };
-		281D1F091DAC50A40007233D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 281D1EF31DAC50A40007233D /* Info.plist */; };
 		281D1F0A1DAC50A40007233D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EF41DAC50A40007233D /* main.m */; };
-		281D1F0B1DAC50A40007233D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281D1EF51DAC50A40007233D /* Media.xcassets */; };
 		281D1F0C1DAC50A40007233D /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EF71DAC50A40007233D /* Stack.m */; };
 		281D1F0D1DAC50A40007233D /* PrintBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EF91DAC50A40007233D /* PrintBinary.m */; };
 		281D1F0E1DAC50A40007233D /* RecursiveDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 281D1EFB1DAC50A40007233D /* RecursiveDrawing.m */; };
@@ -28,7 +25,6 @@
 /* Begin PBXFileReference section */
 		281D1EE51DAC50A40007233D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Recursion/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		281D1EE61DAC50A40007233D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Recursion/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		281D1EE71DAC50A40007233D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Recursion/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		281D1EEA1DAC50A40007233D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281D1EEC1DAC50A40007233D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		281D1EED1DAC50A40007233D /* DigitSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DigitSum.h; path = Recursion/DigitSum.h; sourceTree = SOURCE_ROOT; };
@@ -39,7 +35,6 @@
 		281D1EF21DAC50A40007233D /* Hanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hanoi.m; path = Recursion/Hanoi.m; sourceTree = SOURCE_ROOT; };
 		281D1EF31DAC50A40007233D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Recursion/Info.plist; sourceTree = SOURCE_ROOT; };
 		281D1EF41DAC50A40007233D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Recursion/main.m; sourceTree = SOURCE_ROOT; };
-		281D1EF51DAC50A40007233D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Recursion/Media.xcassets; sourceTree = SOURCE_ROOT; };
 		281D1EF61DAC50A40007233D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = Recursion/Stack.h; sourceTree = SOURCE_ROOT; };
 		281D1EF71DAC50A40007233D /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stack.m; path = Recursion/Stack.m; sourceTree = SOURCE_ROOT; };
 		281D1EF81DAC50A40007233D /* PrintBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrintBinary.h; path = Recursion/PrintBinary.h; sourceTree = SOURCE_ROOT; };
@@ -102,9 +97,7 @@
 			children = (
 				281D1EE81DAC50A40007233D /* Base.lproj */,
 				281D1EF31DAC50A40007233D /* Info.plist */,
-				281D1EE71DAC50A40007233D /* Assets.xcassets */,
 				281D1EF41DAC50A40007233D /* main.m */,
-				281D1EF51DAC50A40007233D /* Media.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,7 +160,7 @@
 		28615E141D9BF80400FFCEFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Yongyang Nie";
 				TargetAttributes = {
 					28615E1B1D9BF80400FFCEFA = {
@@ -200,10 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281D1F0B1DAC50A40007233D /* Media.xcassets in Resources */,
-				281D1F091DAC50A40007233D /* Info.plist in Resources */,
 				281D1F051DAC50A40007233D /* Main.storyboard in Resources */,
-				281D1F031DAC50A40007233D /* Assets.xcassets in Resources */,
 				281D1F041DAC50A40007233D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +336,6 @@
 		28615E4A1D9BF80500FFCEFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
 				INFOPLIST_FILE = "$(SRCROOT)/Recursion/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -359,7 +348,6 @@
 		28615E4B1D9BF80500FFCEFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
 				INFOPLIST_FILE = "$(SRCROOT)/Recursion/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

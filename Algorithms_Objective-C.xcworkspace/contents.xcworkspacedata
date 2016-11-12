@@ -128,6 +128,18 @@
          location = "group:Sudoku Solver"
          name = "Sudoku Solver">
          <FileRef
+            location = "group:../../Linked_List/Linked_List/LinkedList.h">
+         </FileRef>
+         <FileRef
+            location = "group:../../Linked_List/Linked_List/LinkedList.m">
+         </FileRef>
+         <FileRef
+            location = "group:../../Linked_List/Linked_List/LinkedListNode.h">
+         </FileRef>
+         <FileRef
+            location = "group:../../Linked_List/Linked_List/LinkedListNode.m">
+         </FileRef>
+         <FileRef
             location = "group:AppDelegate.h">
          </FileRef>
          <FileRef

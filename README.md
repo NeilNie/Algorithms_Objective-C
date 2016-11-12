@@ -7,20 +7,14 @@ You can find many useful algorithms and data structures in computer science in t
 Learning and playing around with algorithms can make you a much better programmer or computer sciencetist. Many people dive into computer science or programming with little background in algorithms. However, with these basic knowledge, you can be the top 10% of programmers. 
 
 ##Contents:
-####Algorithm
-- Palindrome
-- Insert Sort
-- Merge Sort
-- Recursion
-    - GCD
-    - Recursive Drawings
-    - Tower of Hanoi
-    - Reverse String
+####Searching & Sorting
+Some of the searching and sorting algorithms can be simple and intuitive which others are harder to understand. With these sample projects, you can develop a good understanding for most algorithms and use them in your projects. 
 
-####Searching
 - Linear Search. Find an element in an array.
 - Binary Search. Quickly find elements in a sorted array.
-- Count Occurrences. Count how often a value appears in an array.
+- Count Occurrences. Count how often a value appears in an array. (under construction)
+- Insert Sort
+- Merge Sort
 
 ####Data structures
 - Linked list
@@ -28,9 +22,21 @@ Learning and playing around with algorithms can make you a much better programme
 - Queue
 
 ####Graphs
-- Graph
-- Breadth-first search
-- Depth-first search
+- Graph (under construction)
+- Breadth-first search: 
+    1. Maze solver project
+- Depth-first search:
+    1. Maze solver project
+    2. Sudoku solver project
+    (Both project uses depth first search algorithm. Classic problems)
+
+####Other Algorithms
+- Palindrome
+- Recursion
+- GCD
+- Recursive Drawings
+- Tower of Hanoi
+- Reverse String
 
 
 [much more to come]
