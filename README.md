@@ -30,6 +30,12 @@ Some of the searching and sorting algorithms can be simple and intuitive which o
     2. Sudoku solver project
     (Both project uses depth first search algorithm. Classic problems)
 
+####Trees
+- Binary Search Tree
+- Binary Search Tree Visualisation
+- The Animal Game
+
+
 ####Other Algorithms
 - Palindrome
 - Recursion
@@ -37,7 +43,6 @@ Some of the searching and sorting algorithms can be simple and intuitive which o
 - Recursive Drawings
 - Tower of Hanoi
 - Reverse String
-
 
 [much more to come]
 

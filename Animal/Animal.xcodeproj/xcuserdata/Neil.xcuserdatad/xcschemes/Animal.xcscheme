@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28ED84781DC7661200931406"
-               BuildableName = "Trees"
-               BlueprintName = "Trees"
-               ReferencedContainer = "container:Trees.xcodeproj">
+               BlueprintIdentifier = "28A3CF5C1DF7C7D400D236B0"
+               BuildableName = "Animal.app"
+               BlueprintName = "Animal"
+               ReferencedContainer = "container:Animal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "28A3CF751DF7C7D400D236B0"
+               BuildableName = "AnimalTests.xctest"
+               BlueprintName = "AnimalTests"
+               ReferencedContainer = "container:Animal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "28A3CF801DF7C7D400D236B0"
+               BuildableName = "AnimalUITests.xctest"
+               BlueprintName = "AnimalUITests"
+               ReferencedContainer = "container:Animal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28ED84781DC7661200931406"
-            BuildableName = "Trees"
-            BlueprintName = "Trees"
-            ReferencedContainer = "container:Trees.xcodeproj">
+            BlueprintIdentifier = "28A3CF5C1DF7C7D400D236B0"
+            BuildableName = "Animal.app"
+            BlueprintName = "Animal"
+            ReferencedContainer = "container:Animal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28ED84781DC7661200931406"
-            BuildableName = "Trees"
-            BlueprintName = "Trees"
-            ReferencedContainer = "container:Trees.xcodeproj">
+            BlueprintIdentifier = "28A3CF5C1DF7C7D400D236B0"
+            BuildableName = "Animal.app"
+            BlueprintName = "Animal"
+            ReferencedContainer = "container:Animal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28ED84781DC7661200931406"
-            BuildableName = "Trees"
-            BlueprintName = "Trees"
-            ReferencedContainer = "container:Trees.xcodeproj">
+            BlueprintIdentifier = "28A3CF5C1DF7C7D400D236B0"
+            BuildableName = "Animal.app"
+            BlueprintName = "Animal"
+            ReferencedContainer = "container:Animal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
