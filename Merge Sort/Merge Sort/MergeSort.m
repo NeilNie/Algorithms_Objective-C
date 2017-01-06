@@ -14,14 +14,12 @@
 {
     if ([unsortedArray count] < 2)
         return unsortedArray;
-
+    
     int middle = (int)[unsortedArray count] / 2;
     NSArray *rightArr = [unsortedArray subarrayWithRange:NSMakeRange(0, middle)];
     NSArray *leftArr = [unsortedArray subarrayWithRange:NSMakeRange(middle, ([unsortedArray count] - middle))];
-    //Or iterate through the unsortedArray and create your left and right array
-    //for left array iteration starts at index =0 and stops at middle, for right array iteration starts at midde and end at the end of the unsorted array
-    NSArray *resultArray =[MergeSort mergeLeft:[MergeSort mergeSort:leftArr] right:[MergeSort mergeSort:rightArr]];
-    return resultArray;
+    
+    return [MergeSort mergeLeft:[MergeSort mergeSort:leftArr] right:[MergeSort mergeSort:rightArr]];
 }
 
 +(NSArray *)mergeLeft:(NSArray *)left right:(NSArray *)right{
@@ -57,33 +55,33 @@
     return ordered;
 }
 
-/*
- 
- the other implementation
 
-+(NSArray *)merge:(NSArray *)leftArr andRight:(NSArray *)rightArr{
+-(void)beginExperiment{
     
-    NSMutableArray *result = [[NSMutableArray alloc] init];
-    int right = 0;
-    int left = 0;
-    while (left < [leftArr count] && right < [rightArr count]){
+    for (int i = 10; i < 100000000; i = i * 10) {
         
-        if ([[leftArr objectAtIndex:left] intValue] < [[rightArr objectAtIndex:right] intValue]){
-            [result addObject:[leftArr objectAtIndex:left++]];
+        NSDate *methodStart = [NSDate date];
+        
+        NSMutableArray *numbers  = [NSMutableArray array];
+        while (numbers.count < i) {
+            long x = arc4random()%i * 10;
+            [numbers addObject:[NSNumber numberWithLong:x]];
         }
-        else{
-            [result addObject:[rightArr objectAtIndex:right++]];
-        }
+        NSLog(@"count; %li", numbers.count);
+        
+        NSDate *methodFinish = [NSDate date];
+        NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:methodStart];
+        NSLog(@"construction executionTime = %f", executionTime);
+        
+        NSDate *method2Start = [NSDate date];
+        
+        [MergeSort mergeSort:numbers];
+        
+        NSDate *method2Finish = [NSDate date];
+        NSTimeInterval executionTime2 = [method2Finish timeIntervalSinceDate:method2Start];
+        NSLog(@"sorting executionTime = %f", executionTime2);
+        
+        NSLog(@"------------------------------");
     }
-    NSRange leftRange = NSMakeRange(left, ([leftArr count] - left));
-    NSRange rightRange = NSMakeRange(right, ([rightArr count] - right));
-    
-    NSArray *newRight = [rightArr subarrayWithRange:rightRange];
-    NSArray *newLeft = [leftArr subarrayWithRange:leftRange];
-    
-    newLeft = [result arrayByAddingObjectsFromArray:newLeft];
-    return [newLeft arrayByAddingObjectsFromArray:newRight];
 }
-
-*/
 @end

@@ -11,16 +11,22 @@
       location = "group:BST_Visual/BST_Visual.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Radix Sort/Radix Sort.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BST/BST.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Quick Sort/Quick Sort.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Insertion Sort/Insert Sort.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Merge Sort/Merge Sort.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Depth-first search/Depth-first search.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Insert Sort/Insert Sort.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Graph/Graph.xcodeproj">
